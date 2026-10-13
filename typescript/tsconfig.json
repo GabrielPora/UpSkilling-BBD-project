@@ -1,25 +1,8 @@
 // https://www.youtube.com/watch?v=35cESnxXH6o 
 // Youtube video for reference.
 
-{
-	"exclude": [
-		"node_modules"
-	],
-	"include": [
-		"**/*.ts",
-		"src"
-	],
+{	
 	// Linting rules for TypeScript files
-	"rules": {
-		"no-unused-vars": "warn",
-		"no-console": "off",
-		"no-debugger": "error",
-		"no-undef": "error",
-		"no-empty": "warn",
-		"no-redeclare": "error",
-		"no-dupe-class-members": "error",
-		"strict": true
-	},
 
 	"compilerOptions": {
 		"verbatimModuleSyntax": true,
@@ -38,7 +21,7 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"allowUnusedLabels": false,
-		"noUncheckedSideEffectImports": true,
+		// "noUncheckedSideEffectImports": true,
 		"noFallthroughCasesInSwitch": true,
 		"allowUnreachableCode": false,
 
@@ -49,7 +32,7 @@
 		// This is a new option that will be added in TypeScript 5.2, which will allow you to use the `erasable` 
 		// modifier on class properties and methods. This will allow you to remove unused code from your classes 
 		// without having to use the `@ts-ignore` directive.
-		"erasableSyntaxOnly": true,
+		// "erasableSyntaxOnly": true,
 
 		// Personal Peference
 

@@ -7,7 +7,7 @@ class BeeKeeper {
 }
 
 class ZooKeeper {
-  nametag: string = "Mikle";
+  nameTag: string = "Mikle";
 }
 
 class Animal {
@@ -28,9 +28,9 @@ function createInstance<A extends Animal>(c: new () => A): A {
   return new c();
 }
 
-createInstance(Lion).keeper.nametag;
+createInstance(Lion).keeper.nameTag;
 createInstance(Bee).keeper.hasMask;
-console.log(createInstance(Lion).keeper.nametag);
+console.log(createInstance(Lion).keeper.nameTag);
 console.log(createInstance(Lion).numLegs);
 console.log(createInstance(Bee).keeper.hasMask);
 console.log(createInstance(Bee).numLegs);
@@ -110,3 +110,29 @@ console.log(getProperty(x, "b"));
 console.log(getProperty(x, "c"));
 console.log(getProperty(x, "d"));
 
+console.log("Using Generics");
+
+function getFirstElement<Type>(arr: Type[]): Type | undefined {
+  return arr[0];
+}
+
+const numbers = [1, 2, 3, 4, 5];
+const firstNumber = getFirstElement(numbers);
+console.log(firstNumber); // Output: 1
+
+const strings = ["apple", "banana", "cherry"];
+const firstString = getFirstElement(strings);
+console.log(firstString); // Output: "apple"
+
+
+function getFirstElement2<ElementType>(arr: ElementType[]){
+  return arr[0];
+}
+
+const numbers2 = [1, 2, 3, 4, 5];
+const firstNumber2 = getFirstElement2(numbers2);
+console.log(firstNumber2); // Output: 1
+
+const strings2 = ["apple", "banana", "cherry"];
+const firstString2 = getFirstElement2(strings2);
+console.log(firstString2); // Output: "apple"
