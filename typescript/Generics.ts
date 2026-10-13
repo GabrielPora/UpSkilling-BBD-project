@@ -15,11 +15,12 @@ class Animal {
 }
 
 class Bee extends Animal {
-  numLegs = 6;
+  override numLegs = 6;
   keeper: BeeKeeper = new BeeKeeper();
 }
 
 class Lion extends Animal {
+  override numLegs = 4;
   keeper: ZooKeeper = new ZooKeeper();
 }
 
