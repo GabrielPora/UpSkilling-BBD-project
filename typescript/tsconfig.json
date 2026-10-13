@@ -1,0 +1,81 @@
+{
+	"exclude": [
+		"node_modules"
+	],
+	"include": [
+		"**/*.ts",
+		"src"
+	],
+	// Linting rules for TypeScript files
+	"rules": {
+		"no-unused-vars": "warn",
+		"no-console": "off",
+		"no-debugger": "error",
+		"no-undef": "error",
+		"no-empty": "warn",
+		"no-redeclare": "error",
+		"no-dupe-class-members": "error",
+		"strict": true
+	},
+
+	"compilerOptions": {
+		"verbatimModuleSyntax": true,
+		"moduleDetection": "force",
+		"noEmit": true,
+
+		// linting
+		"strict": true,
+
+		// Must have
+
+		// Path mapping for absolute imports and to shorten import paths
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"allowUnusedLabels": false,
+		"noUncheckedSideEffectImports": true,
+		"noFallthroughCasesInSwitch": true,
+		"allowUnreachableCode": false,
+
+		// Optional but highly suggested
+		"noUncheckedIndexedAccess": true,
+		"noPropertyAccessFromIndexSignature": true,
+
+		// This is a new option that will be added in TypeScript 5.2, which will allow you to use the `erasable` 
+		// modifier on class properties and methods. This will allow you to remove unused code from your classes 
+		// without having to use the `@ts-ignore` directive.
+		"erasableSyntaxOnly": true,
+
+		// Personal Peference
+
+		// heavily used for object-oriented programming, especially when using inheritance and polymorphism. 
+		// It helps to ensure that the derived class is actually overriding a method from the base class, 
+		// and not just creating a new method with the same name. 
+		// Works like Java Override annotation. It can help catch errors at compile time and improve code readability.
+		"noImplicitOverride": true,
+		
+		// This option is useful for catching errors in your code that may not be immediately obvious.
+		// It will prevent TypeScript from truncating error messages, which can make it difficult to understand the root cause of an error. 
+		// By enabling this option, you can get more detailed error messages that can help you identify and fix issues in your code more quickly.
+		// Only use for debugging, as it can make the error messages very long and difficult to read.
+		"noErrorTruncation": true,
+
+		// This option is useful for catching errors in your code that may not be immediately obvious.
+		// helpful for catching errors in your code that may not be immediately obvious.
+		// It will prevent TypeScript from allowing you to assign undefined to a property that is not explicitly marked as optional. 
+		// This can help you catch potential bugs in your code
+		// and ensure that your code is more robust and reliable.
+		"exactOptionalPropertyTypes": true,
+
+
+		//  JS Only
+		// if true, allows JavaScript files to be compiled. If false, only TypeScript files are allowed.
+		"allowJs": true,
+		// if true, enables type checking for JavaScript files. If false, type checking is disabled for JavaScript files.
+		"checkJs": true
+		// use @ts-check in JavaScript files to enable type checking for that file. 
+		// If false, type checking is disabled for that file.
+	}
+}
