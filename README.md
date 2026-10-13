@@ -30,34 +30,35 @@ UpSkilling for BBD project
           Backend A        Backend B        Backend C
 
 
-Authentication
-      │
-      ▼
-   Keycloak
-      │
-      ├── Authentication
-      ├── Tokens
-      ├── Roles
-      └── Identity
+
+	Authentication
+		│
+		▼
+	Keycloak
+		│
+		├── Authentication
+		├── Tokens
+		├── Roles
+		└── Identity
 
 
-Supporting platform
-      │
-      ├── Pushwoosh → Push notifications
-      ├── Intercom  → Customer communication
-      ├── Dynatrace → Observability
-      ├── Storybook → Component development
-      ├── Vitest    → Testing
-      └── ESLint    → Code quality
+	Supporting platform
+		│
+		├── Pushwoosh → Push notifications
+		├── Intercom  → Customer communication
+		├── Dynatrace → Observability
+		├── Storybook → Component development
+		├── Vitest    → Testing
+		└── ESLint    → Code quality
 
 
-Delivery
-      │
-      ▼
-Azure DevOps
-      │
-      └── EAS Build
-              │
-              ├── Android
-              ├── iOS
-              └── Web
+	Delivery
+		│
+		▼
+	Azure DevOps
+		│
+		└── EAS Build
+				│
+				├── Android
+				├── iOS
+				└── Web
