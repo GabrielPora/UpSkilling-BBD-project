@@ -6,7 +6,7 @@ a.out
 .*.c.*
 ._*
 ._*.txt
-
+*.json
 *.gch
 *.a
 .VC.*
