@@ -58,7 +58,7 @@ UpSkilling for BBD project
 	Azure DevOps
 		│
 		└── EAS Build
-				│
-				├── Android
-				├── iOS
-				└── Web
+			│
+			├── Android
+			├── iOS
+			└── Web
