@@ -32,15 +32,11 @@ TypeScript's own documentation specifically covers generics, type operators, map
 
 ## Team-lead test
 You should be able to explain:
-Why is unknown generally safer than any?
-
-When would you use a discriminated union?
-
-Why would you use a generic instead of duplicating interfaces?
-
-What does strict actually protect us from?
-
-When does TypeScript stop protecting us because the problem is runtime data?
+1. Why is unknown generally safer than any?
+2. When would you use a discriminated union?
+3. Why would you use a generic instead of duplicating interfaces?
+4. What does strict actually protect us from?
+5. When does TypeScript stop protecting us because the problem is runtime data?
 
 That last one is very important.
 For example:
